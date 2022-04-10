@@ -33,12 +33,13 @@
     list-style: none ; /* Elimina marcadores do menu */
 }
 
+            /* CSS ANTIGO */
 /* Background do menu  */
-#menu {
+/*#menu {*/
     /*width: 100%; /* Espaço */
     /*height: 59px; /* Altura */
-    background-color:rgb(248, 205, 153); /* Cor */
-    text-align: center;
+    /*background-color:rgb(248, 205, 153); /* Cor */
+    /*text-align: center;
     left: -50px;
     width: 106%;
     height: 10%;
@@ -49,27 +50,106 @@
 }
 
 /* Menu */
-#linksmenu li a {
+/*#linksmenu li a {
     float:left ; /* Posição */
-    margin-left: 10%;
+    /*margin-left: 10%;
     padding: 15px; /* Altura */
-    background-color: rgb(248, 205, 153); /* Cor*/
-    color:  #412b06; /* Cor das letras */
-    text-decoration: none;  /* Elimina o sublinhado do texto */
-    font-size: 18px; /* Tamanho da fonte*/
-    -webkit-border-radius:5px;
+    /*background-color: rgb(248, 205, 153); /* Cor*/
+    /*color:  #412b06; /* Cor das letras */
+    /*text-decoration: none;  /* Elimina o sublinhado do texto */
+    /*font-size: 18px; /* Tamanho da fonte*/
+    /*-webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
 }
 /* Efeito ao passar o mouse*/
-#linksmenu li a:hover{
+/*#linksmenu li a:hover{
     background-color: #c87602;
     color: #eed29f;
     border-radius: 5px;
 }
 .imagem{
     text-align: center;
+}*/
+
+            /* CSS NOVO */
+
+            /* MENU */
+header{
+    background-color: white;
+    /*position: absolute;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
 }
 
+.menu, .conta{
+    font-size: 20px;
+}
 
+        /* ITENS DO MENU */
 
+.itens{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.itens > li{
+    padding: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+    /* EFEITO DE PASSAR O MOUSE */
+
+.link:hover{
+    color: #ff973d;
+}
+
+    /* LONGIN/SINGUP */
+
+.conta{
+    display: flex;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.clink{
+    text-decoration: none;
+    padding: 15PX;
+}
+
+#log{
+    color:var(--cor2);
+    font-weight: bold;
+}
+
+#log:hover{
+    color: #ff973d;
+}
+
+#sing{
+    background-color: #ff973d;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+#sing:hover{
+    background-color: #e48635;
+    color: white;
+    transition: 0.5s;
+}
+
+.conta > p{
+    padding: 10px;
+}

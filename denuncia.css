@@ -21,68 +21,88 @@ body{
     list-style: none ; /* Elimina marcadores do menu */
 }
 
-/* Background do menu  */
-#menu {
-    /*width: 100%; /* Espaço */
-    /*height: 59px; /* Altura */
-    background-color:rgb(248, 205, 153); /* Cor */
-    text-align: center;
-    left: -50px;
-    width: 106%;
-    height: 10%;
-    position: absolute;
-    margin-left: 0px;
-    display: inline-block;
+            /* CSS NOVO */
 
-}
-
-/* Menu */
-#linksmenu li a {
-    float: left;
-    margin-left: 10%;
-    padding: 15px; /* Altura */
-    background-color: rgb(248, 205, 153); /* Cor*/
-    color:  orange; /* Cor das letras */
-    text-decoration: none;  /* Elimina o sublinhado do texto */
-    font-size: 18px; /* Tamanho da fonte*/
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-}
-/* Efeito ao passar o mouse*/
-/*#linksmenu li a:hover{
-    background-color: burlywood;
-    color: #eed29f;
-    border-radius: 5px;
-}*/
-.imagem{
-    text-align: center;
-}
-
-nav{
-    background-color: rgb(248, 205, 153);
-    overflow: hidden; 
-    position: absolute;
+            /* MENU */
+header{
+    background-color: white;
+    /*position: absolute;*/
     width: 100%;
-    z-index: 2;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329)
 }
-nav a{
-    color: rgb(0, 0, 0);
-    display: block;
+            
+.menu, .conta{
+    font-size: 20px;
+}
+            
+        /* ITENS DO MENU */
+            
+.itens{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+            
+.itens > li{
+    padding: 20px;
+}
+            
+.link{
     text-decoration: none;
-    display:inline-flex;
-    margin-top: 0;
-    margin-left: 10%;
-    padding: 14px 19px;
-    text-align: center;
+    color: var(--cor2);
 }
-/* Efeito ao passar o mouse*/
-/*nav a:hover{
-    background-color: #c87602;
-    color: #eed29f;
+            
+        /* EFEITO DE PASSAR O MOUSE */
+            
+.link:hover{
+    color: #ff973d;
+}
+            
+/* LONGIN/SINGUP */
+            
+.conta{
+    display: flex;
+    font-size: 25px;
+    transition: 0.5s;
+}
+            
+.clink{
+    text-decoration: none;
+    padding: 15PX;
+}
+            
+#log{
+    color:var(--cor2);
+    font-weight: bold;
+}
+            
+#log:hover{
+    color: #ff973d;
+}
+            
+#sing{
+    background-color: #ff973d;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
     border-radius: 5px;
-}*/
+}
+            
+#sing:hover{
+    background-color: #e48635;
+    color: white;
+    transition: 0.5s;
+}
+            
+.conta > p{
+    padding: 10px;
+}
+
 .container1{
     height: 800px;
     max-width: 800px;
