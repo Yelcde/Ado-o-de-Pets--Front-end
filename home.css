@@ -79,12 +79,75 @@ header{
     background-color: white;
     /*position: absolute;*/
     width: 100%;
+    top:8vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
 }
+
+        /* MENU RESPONSIVO */
+
+.mobile-menu div { /* CADA BARRA DO MENU */
+    width: 32px;
+    height: 8px;
+    background-color: black;
+    margin: 5px;
+    
+}
+
+.mobile-menu{ /* TODAS AS BARRAS DO MENU */
+    cursor: pointer; /* QUANDO PASSAR O MOUSE EM CIMA, APARECER A OPÇÃO DE CLIQUE */
+    display: none; /* NÃO APARECER NA TELA */
+    padding-left: 12%;
+}
+
+@media (max-width: 1170px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .itens{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.329);
+        padding: 0;
+        /*transform: translateX(100%);*/
+    }
+
+    .itens.active{
+        transform: translatex(0);
+    }
+
+    .lista:hover{
+        background-color: rgb(218, 218, 218);
+        color: black;
+    }
+
+    .itens > li{
+        margin: 0;
+    }
+
+    .lista{
+        background-color: white;
+        width: 50vw;
+        align-items: center;
+        padding: 45px;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+}
+
 
 .menu, .conta{
     font-size: 20px;
@@ -97,20 +160,29 @@ header{
     list-style: none;
     font-size: 25px;
     font-weight: bold;
+    align-items: center;
 }
 
 .itens > li{
     padding: 20px;
 }
 
-.link{
+.itens > a{
     text-decoration: none;
-    color: var(--cor2);
+    color: black;
+    padding: 10px;
 }
+
+.itens > .lista{
+    color: black;
+}
+
+    /* TIRAR LOGIN/SINGUP */
+
 
     /* EFEITO DE PASSAR O MOUSE */
 
-.link:hover{
+.lista:hover{
     color: #ff973d;
 }
 
@@ -122,9 +194,17 @@ header{
     transition: 0.5s;
 }
 
+.sumir{
+    display: none;
+}
+
+#conta1{
+    display: none;
+}
+
 .clink{
     text-decoration: none;
-    padding: 15PX;
+    padding: 10px;
 }
 
 #log{
@@ -151,5 +231,5 @@ header{
 }
 
 .conta > p{
-    padding: 10px;
+    padding: 1px;
 }
